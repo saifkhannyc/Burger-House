@@ -1,0 +1,492 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/* global css file here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+p,
+span,
+input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* header css */
+.header {
+  width: 100%;
+  background: url(../img/banner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.navbar-nav .delivery {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.navbar-nav .delivery img {
+  margin-right: 15px;
+}
+
+.navbar-nav .delivery span {
+  font-size: 24px;
+  font-weight: 900;
+  vertical-align: middle;
+  font-size: 17px;
+  color: #3d2514;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.navbar-nav .menu-item {
+  /* display: flex; */
+  /* align-items: left; */
+}
+
+.navbar-nav .menu-item ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.navbar-nav .menu-item ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 700;
+  color: #3d2514;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.menu-item ul li a:hover {
+  color: red;
+  transition: 0.5s easy-in-out;
+}
+
+.banner-text {
+  height: 60vh;
+  vertical-align: middle;
+  display: table-cell;
+  position: relative;
+}
+
+.text h3 {
+  border: 2px dashed #3d2514;
+  display: inline-block;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+
+.text h1 {
+  font-size: 83px;
+  color: #3d2514;
+  letter-spacing: 4px;
+  text-shadow: 5px 3px white;
+}
+
+.text h2 {
+  font-size: 43px;
+  color: #3d2514;
+  letter-spacing: 4px;
+  text-shadow: 3px 2px white;
+}
+
+.promo {
+  width: 150px;
+  height: 150px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: absolute;
+  background: red;
+  top: 661px;
+  left: 744px;
+}
+
+.promo-border {
+  width: 130px;
+  height: 130px;
+  border: 2px dashed white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 9px;
+  right: 9px;
+  text-align: center;
+  padding: 20px;
+}
+
+.promo h4 {
+  font-size: 45px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+.promo span {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.only {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  letter-spacing: 4px;
+}
+
+/* Blog Gallery CSS */
+.blog-gallery {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left {
+  position: relative;
+  padding: 15px;
+}
+
+.right {
+  padding: 15px;
+}
+
+.top {
+  margin-bottom: 28px;
+}
+
+.top,
+.bottom {
+  position: relative;
+}
+
+.post-text {
+  position: absolute;
+  color: white;
+  top: 30px;
+  left: 40px;
+}
+
+.post-text h4 {
+  font-size: 24px;
+}
+
+.post-text h3 {
+  font-size: 34px;
+  letter-spacing: 2px;
+}
+
+.button {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.button button {
+  padding: 16px;
+  border: 1px solid #ffc74d;
+  background: #ffc74d;
+  color: #3d2514;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+}
+
+.button button:hover {
+  color: black;
+  background: white;
+  border: 1px solid#FFC74D;
+  transition: 0.9s ease-in-out;
+}
+
+/* blog-item section css */
+
+.blog-item {
+  width: 100%;
+}
+
+.blog-item .title {
+  text-align: center;
+}
+
+.blog-item .title h1 {
+  font-size: 43px;
+  color: #3d2514;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.blog-item .title p {
+  line-height: 32px;
+}
+
+.item-gallery {
+  display: flex;
+  margin: 40px 0;
+}
+
+.item {
+  padding: 15px;
+  text-align: center;
+}
+
+.item h3 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.item p {
+  margin-bottom: 30px;
+}
+
+.item button {
+  padding: 10px 25px;
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Event CSS */
+
+.event-body {
+  width: 100%;
+  display: flex;
+  padding: 25px;
+  box-shadow: 0px 25px 45px #b7bcbb;
+}
+
+.event-text {
+  margin-top: 40px;
+  width: 60%;
+  padding: 60px 40px 0 40px;
+}
+
+.event-text h4 {
+  font-size: 26px;
+}
+
+.event-text h3 {
+  font-size: 43px;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  position: absolute;
+  left: 50px;
+  bottom: 19px;
+}
+
+.event-img {
+  margin-top: 20px;
+}
+
+/* Contact css file */
+
+.reservation {
+  width: 100%;
+  background: url(../img/burder-s.png) no-repeat top;
+  background-size: cover;
+  height: 80vh;
+  padding-top: 60px;
+}
+
+.reservation-form-title {
+  text-align: center;
+}
+
+.reservation-form-title h4 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 38px;
+  color: #3d2514;
+}
+
+.reservation-form-title h2 {
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: 400;
+  font-size: 50px;
+  color: #3d2514;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.reservation-form-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.reservation-form-section input {
+  width: 325px;
+  padding: 10px;
+  margin: 30px 4px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 1px solid grey;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.reservation-form-section button {
+  margin-left: 5px;
+  padding: 10px 123px;
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Footer Section Css */
+
+.footer {
+  width: 100%;
+  padding-bottom: 50px;
+  background: url(../img/bottom.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+}
+
+/* .footer-img {
+  background: url(../img/bottom.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+} */
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info .left {
+  width: 50%;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.logo img {
+  margin-bottom: 30px;
+}
+
+.logo p {
+  padding: 0px 0px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.footer-info .right {
+  width: 35%;
+  margin-top: 140px;
+}
+
+.icon-1 {
+  margin-bottom: 10px;
+}
+
+.right i {
+  font-size: 60px;
+  color: #fff;
+}
+
+.right h4 {
+  font-size: 25px;
+  color: #fff;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+.icon-1,
+.icon-2 {
+  display: flex;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.rights {
+  color: #fff;
+  margin-left: 20px;
+}
+
+p,
+span,
+input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.social-icons {
+  text-align: center;
+  margin-right: 50px;
+  margin-bottom: -30px;
+}
+
+.social-icons ul li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.social-icons ul li i {
+  color: black;
+  font-size: 35px;
+  padding-top: 7px;
+}
